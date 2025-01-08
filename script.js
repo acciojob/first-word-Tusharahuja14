@@ -5,7 +5,7 @@ function firstWord(s) {
 	{
 		return ''
 	}
-	let j=0;
+	let j=s.length;
 	for(let i=0;i<s.length;i++)
 		{
 			if(s.charAt(i)==' ')
@@ -14,10 +14,6 @@ function firstWord(s) {
 				break;
 			}
 		}
-	if(j===0)
-	{
-		return s;
-	}
 	let ans=s.substring(0,j);
 	return ans;
 }
