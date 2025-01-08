@@ -14,11 +14,15 @@ function firstWord(s) {
 				break;
 			}
 		}
+	if(j===0)
+	{
+		return s;
+	}
 	let ans=s.substring(0,j);
 	return ans;
 }
 
 // Do not change the code below
-
+/*
 const s = prompt("Enter String:");
 alert(firstWord(s));
